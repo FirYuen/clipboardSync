@@ -1,0 +1,15 @@
+{
+  "name": "clipboardsyncserver",
+  "version": "0.0.1",
+  "description": "a socket.io based clipboard sync server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "FirYuen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0"
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.disconnected{
+		color: #dddddd
+	}
+	.connected{
+		color: #99CC33
+	}
+	.failed{
+		color:#CC0033
+	}
+	.disabled{
+		pointer-events: none;
+    	cursor: default;
+    	opacity: 0.6;
+	}
+	</style>
+	<meta charset="utf-8" />
+	<title>popup</title>
+</head>
+<body style="width:300px;min-height:100px;">
+	<p>请输入服务器地址，格式:ip/服务器地址:端口号</p>
+	<p>密钥为6-20位字母数字组合,密钥相同的设备可以进行剪切板同步</p>
+	<label>连接状态</label>:<span id="status" class="disconnected">未连接</span>
+	<div id="controlArea">
+		<label for="serverAddr">服务器地址</label>:<input  type="text" name="serverAddr" id="serverAddr">
+		<br>
+		<label for="roomID">请输入密钥</label>:<input  type="text" name="roomID" id="roomID">
+		<div style="margin: 5px auto;">
+			<button id='connect' type="submit">连接</button>
+			<button id='disconnect' type="submit">登出</button>
+			<span id="connectResult"></span>
+		</div>
+	</div>
+	<script src="js/Vendor/jquery.min.js"></script>
+	<script src="js/popup.js"></script>
+</body>
+</html>
